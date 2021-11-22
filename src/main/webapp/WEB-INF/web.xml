@@ -1,0 +1,68 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>ApproveServlet</servlet-name>
+    <servlet-class>servlets.ApproveServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DenyServlet</servlet-name>
+    <servlet-class>servlets.DenyServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>servlets.LogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MakeTransactionServlet</servlet-name>
+    <servlet-class>servlets.MakeTransactionServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ValidateServlet</servlet-name>
+    <servlet-class>servlets.ValidateServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PendingTicketServlet</servlet-name>
+    <servlet-class>servlets.PendingTicketServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ApproveServlet</servlet-name>
+    <url-pattern>/approve</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DenyServlet</servlet-name>
+    <url-pattern>/deny</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MakeTransactionServlet</servlet-name>
+    <url-pattern>/transaction</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ValidateServlet</servlet-name>
+    <url-pattern>/validate</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PendingTicketServlet</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+
+</web-app>

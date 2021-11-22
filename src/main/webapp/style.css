@@ -1,0 +1,69 @@
+@font-face {
+    font-family: arcade;
+    src: url(arcadeclassic/ARCADECLASSIC.TTF);
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #000;
+    background-image: radial-gradient(#11581e,#041607);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: arcade;
+    font-size: 30px;
+    color: rgba(128,255,128,.8);
+    text-shadow: 0 0 1ex #3f3, 0 0 2px rgb(255 255 255 / 80%);
+}
+
+.field {
+    font-family: oxygen mono,monospace;
+}
+
+.noise {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Static.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: .015;
+}
+
+.overlay {
+    pointer-events: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+        180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.5) 50%,rgba(0,0,0,0) 100%);
+    background-size: auto 4px;
+    z-index: 1;
+}
+
+.terminal {
+    box-sizing: inherit;
+    position: absolute;
+    width: 100vw;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.btn{
+    font-family: arcade;
+    font-size: 30px;
+}
+
+.btn:hover {
+    color:#fff;
+}
+
+.output {
+    margin: 0;
+    color: rgba(128,255,128,.8);
+    text-shadow: 0 0 1px rgb(51 255 51 / 40%), 0 0 2px rgb(255 255 255 / 80%);
+    background:none;
+}

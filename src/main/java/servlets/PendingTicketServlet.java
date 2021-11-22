@@ -46,6 +46,7 @@ public class PendingTicketServlet extends HttpServlet {
 
         HttpSession session = request.getSession(false);
         String userType = (String)session.getAttribute("type");
+        String employeeId = request.getParameter("employeeId");
 
         TicketDao ticketDao = DaoFactory.getTicketDao();
         List<Ticket> tickets;
@@ -54,8 +55,11 @@ public class PendingTicketServlet extends HttpServlet {
             int id = (int) session.getAttribute("id");
             tickets = ticketDao.getTicketsByEmployee(id);
             rd = request.getRequestDispatcher("/employeetable.jsp");
-        } else {
+        } else if(employeeId == null) {
             tickets = ticketDao.getTickets();
+            rd = request.getRequestDispatcher("/managertable.jsp");
+        } else {
+            tickets = ticketDao.getTicketsByEmployee(Integer.parseInt(employeeId));
             rd = request.getRequestDispatcher("/managertable.jsp");
         }
 

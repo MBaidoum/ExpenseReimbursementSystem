@@ -12,22 +12,24 @@
 
 <div class="noise"></div>
 <div class="overlay"></div>
-<a href="view" class="output">View Tickets</a> |
-<a href="logout" class="output">Logout</a>
-<div class="terminal">
-    <form method="post" action="transaction">
-        <div class="form-group">
-            <label class="output">Amount</label>
-            <input type="number" class="output" name="expense" min="0"/>
-        </div>
+<div class="table-box">
+    <a href="view" class="output btn">View Tickets</a>
+    <a href="logout" class="output btn">Logout</a>
+    <div class="terminal">
+        <form method="post" action="transaction">
+            <div class="form-group">
+                <label class="output">Amount</label>
+                <input type="number" class="output" name="expense" min="0"/>
+            </div>
 
-        <div class="form-group">
-            <label class="output">Reason for expense</label>
-            <input type="text" class="output" name="reason" />
-        </div>
+            <div class="form-group">
+                <label class="output">Reason for expense</label>
+                <input type="text" class="output" name="reason" />
+            </div>
 
-        <input type="submit" class="output btn" value="Create" />
-    </form>
+            <input type="submit" class="output btn" value="Create" />
+        </form>
+    </div>
 </div>
 </body>
 </html>

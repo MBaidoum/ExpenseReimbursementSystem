@@ -1,47 +1,19 @@
-@font-face {
-    font-family: arcade;
-    src: url(arcadeclassic/ARCADECLASSIC.TTF);
-}
 
 body {
     box-sizing: border-box;
-    height: 100vh;
-    background-color: #000;
-    background-image: url(img/SF3TS-Background.png);
+    background: url(img/vector.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: arcade;
+    font-family: helvetica;
     font-size: 30px;
     color: rgba(128,255,128,.8);
-    text-shadow: 0 0 1ex #3f3, 0 0 2px rgb(255 255 255 / 80%);
 }
 
 .field {
-    font-family: oxygen mono,monospace;
-}
-
-.noise {
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(img/Static.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    opacity: .015;
-}
-
-.overlay {
-    pointer-events: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: repeating-linear-gradient(
-        180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.5) 50%,rgba(0,0,0,0) 100%);
-    background-size: auto 4px;
-    z-index: 1;
+    font-family: helvetica;
+    color: rgba(0 0 0);
+    width: 70%;
 }
 
 .terminal {
@@ -53,17 +25,37 @@ body {
 }
 
 .btn{
-    font-family: arcade;
+    font-family: helvetica;
     font-size: 30px;
+    background: #0062cc;
+    color: #f8f9fa;
 }
 
 .btn:hover {
-    color:#fff;
+    background: #007bff;
+    color: #f8f9fa;
 }
 
-.output {
+.login .output {
     margin: 0;
     color: rgba(255 255 255);
-    text-shadow: 0 0 1px rgb(51 255 51 / 40%), 0 0 2px rgb(255 255 255 / 80%);
-    background:none;
+    width: 70%;
+}
+
+.login {
+    margin: 10% 30%;
+    background: #343a40;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 15% 30%;
+    text-align: center;
+    width: 25%;
+}
+
+.table-box{
+    padding: 1.5%;
+}
+
+.table-box .table{
+    width:97%;
 }

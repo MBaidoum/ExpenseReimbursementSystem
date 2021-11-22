@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface TicketDao {
 
-    public void addTicket(int expense, int id);
+    public void addTicket(int expense, String reason, int id);
 
     public void updateTicket(String status, Ticket ticket);
 

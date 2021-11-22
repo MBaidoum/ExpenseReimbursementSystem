@@ -21,9 +21,10 @@ public class MakeTransactionServlet extends HttpServlet {
         int id = (int) session.getAttribute("id");
 
         int expense = Integer.parseInt(request.getParameter("expense"));
+        String reason = request.getParameter("reason");
 
         TicketDao ticketDao = DaoFactory.getTicketDao();
-        ticketDao.addTicket(expense, id);
+        ticketDao.addTicket(expense, reason, id);
 
         RequestDispatcher rd = request.getRequestDispatcher("/maketicket.html");
         rd.include(request, response);

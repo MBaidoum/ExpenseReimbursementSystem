@@ -23,6 +23,7 @@
           <th scope="col">id</th>
           <th scope="col">Expense</th>
           <th scope="col">EmployeeId</th>
+          <th scope="col">Reason</th>
           <th scope="col">Status</th>
         </tr>
       </thead>
@@ -35,6 +36,7 @@
             <th scope="row" class="output"><%= t.getId()%></th>
             <td class="output"><%= t.getExpense()%></td>
             <td class="output"><%= t.getEmployeeId()%></td>
+            <td class="output"><%= t.getReason()%></td>
             <td class="output"><%= t.getStatus()%></td>
           </tr>
           <% } %>

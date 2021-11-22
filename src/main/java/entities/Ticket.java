@@ -14,12 +14,14 @@ public class Ticket {
     private int expense;
     private int employeeId;
     private String status;
+    private String reason;
 
-    public Ticket(int id, int expense, int employeeId, String status) {
+    public Ticket(int id, int expense, int employeeId, String status, String reason) {
         this.id = id;
         this.expense = expense;
         this.employeeId = employeeId;
         this.status = status;
+        this.reason = reason;
     }
 
     public Ticket() {
@@ -55,5 +57,13 @@ public class Ticket {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
     }
 }

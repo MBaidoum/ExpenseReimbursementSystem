@@ -19,7 +19,7 @@ public class InitializeDB {
         //listUsers(userDao);
         //Ticket ticket = new Ticket(17, 350, 13, "pending");
         //ticketDao.updateTicket("approved", ticket);
-        addTicket(ticketDao, 100, 10);
+        addTicket(ticketDao, 100, "reason", 10);
         listTickets(ticketDao);
 
     }
@@ -48,8 +48,8 @@ public class InitializeDB {
         }
     }
 
-    public static void addTicket(TicketDao ticketDao, int ex, int id) {
-        ticketDao.addTicket(ex, id);
+    public static void addTicket(TicketDao ticketDao, int ex, String reason, int id) {
+        ticketDao.addTicket(ex, reason, id);
     }
 
     public static void listTickets(TicketDao ticketDao){

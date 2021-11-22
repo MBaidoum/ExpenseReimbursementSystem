@@ -13,12 +13,13 @@ public class TicketDaoImpl implements TicketDao {
     //Adds a ticket to the database with the passed expense and employeeId
     //New tickets are always pending
     @Override
-    public void addTicket(int expense, int id){
+    public void addTicket(int expense, String reason, int id){
         Session session = ConfigurationFactory.getSession();
         Transaction t = session.beginTransaction();
 
         Ticket ticket = new Ticket();
         ticket.setExpense(expense);
+        ticket.setReason(reason);
         ticket.setEmployeeId(id);
         ticket.setStatus("pending");
 

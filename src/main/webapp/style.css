@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     height: 100vh;
     background-color: #000;
-    background-image: radial-gradient(#11581e,#041607);
+    background-image: url(img/SF3TS-Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -63,7 +63,7 @@ body {
 
 .output {
     margin: 0;
-    color: rgba(128,255,128,.8);
+    color: rgba(255 255 255);
     text-shadow: 0 0 1px rgb(51 255 51 / 40%), 0 0 2px rgb(255 255 255 / 80%);
     background:none;
 }

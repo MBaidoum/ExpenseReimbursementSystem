@@ -45,11 +45,11 @@
                 <% if (t.getStatus().equals("pending")) { %>
                 <form method="post" action="approve" style="display:inline">
                   <input type="hidden" name="ticketId" value=<%= t.getId()%> />
-                  <input type="submit" class="output btn" value="Approve" />
+                  <input type="submit" class="output btn btn-success" value="Approve" />
                 </form>
                 <form method="post" action="deny" class="output" style="display:inline">
                   <input type="hidden" name="ticketId" value=<%= t.getId()%> />
-                  <input type="submit" class="output btn" value="Deny" />
+                  <input type="submit" class="output btn btn-danger" value="Deny" />
                 </form>
                 <% } %>
                 </td>

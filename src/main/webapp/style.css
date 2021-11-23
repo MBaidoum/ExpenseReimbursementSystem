@@ -27,12 +27,14 @@ body {
 .btn{
     font-family: helvetica;
     font-size: 30px;
-    background: #0062cc;
+    background: rgb(78,0,11);
+    background: linear-gradient(166deg, rgba(78,0,11,1) 0%, rgba(8,8,51,1) 45%, rgba(10,70,8,1) 100%);
     color: #f8f9fa;
 }
 
 .btn:hover {
-    background: #007bff;
+    background: rgb(153,0,22);
+    background: linear-gradient(166deg, rgba(153,0,22,1) 0%, rgba(20,20,130,1) 45%, rgba(25,157,21,1) 100%);
     color: #f8f9fa;
 }
 
@@ -58,4 +60,8 @@ body {
 
 .table-box .table{
     width:97%;
+}
+
+.table-dark {
+    --bs-table-bg: none;
 }

@@ -45,11 +45,10 @@ body {
 }
 
 .login {
-    margin: 10% 30%;
+    margin: 15% 35%;
     background: #343a40;
     padding: 20px;
     border-radius: 25px;
-    margin: 15% 30%;
     text-align: center;
     width: 25%;
 }
@@ -64,4 +63,18 @@ body {
 
 .table-dark {
     --bs-table-bg: none;
+}
+
+.buttons {
+    background: #343a40;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 15% 23%;
+    text-align: center;
+    width: 50%;
+}
+
+.buttons .btn {
+    padding:45px;
+    margin: 0 10px;
 }

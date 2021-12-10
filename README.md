@@ -26,6 +26,10 @@ These tickets are then approved or denied by a finance manager.  Managers may lo
 ## Get Started
 Clone the repository
 `git clone https://github.com/MBaidoum/Ledger.git`
+In order to populate the database there is a standalone file called InitializeDB.
+This file has a number of mehtods which can be used to add data to the database.
 You will need something akin to apache tomcat to run the program, but other than that you're all set.
 
 ## Usage
+When you run the program, you should reach the login screen
+![Landing](https://user-images.githubusercontent.com/80432107/145626040-bc4f7270-5afe-4024-a2e4-f6af4ec2a85b.PNG)
